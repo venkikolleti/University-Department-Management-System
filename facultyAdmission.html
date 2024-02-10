@@ -1,0 +1,332 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+        <title>UDMS</title>
+        <meta name="desciption" content="Coding collegues">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+.container-big-1 a{
+    color: white;
+}
+body{
+    background-color:#baf4f5; 
+}
+
+
+.container-1{
+
+    border-radius:20px 0px 0px 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("Images/b4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.container-2{
+
+    border-radius:0px 20px 20px 0px;
+    background:linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.5));
+    box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);
+}
+.form-control{
+    height:-20px;
+    border:0px;
+    background:linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    border-bottom:2px solid black;
+
+}
+
+.container-big-1 .navbar{
+                background:linear-gradient(to right,#079440,#07b34c);
+
+                box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 10px rgba(153, 184, 180, 0.4);
+
+
+}
+.container-1 .quote h5{
+    color:#a5b5b2;
+}
+
+.container-2 .heading{
+    border:2px solid green;
+    width:400px;
+    margin:auto;
+    padding:15px;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);  
+    border-radius:70px 5px 70px 5px;
+}
+.container-2 .submit-btn{
+    border-radius:40px;
+    background:linear-gradient(to right,#52c441,#48bf36,#62eb4d);
+        box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);  
+
+}
+.container-reg{
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 650px;
+}
+.error{
+    color:red;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container-big-1">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-3" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-col" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-col">
+                    <ul class="navbar-nav nav-underline ms-auto me-3">
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link"><b>Register</b></a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-reg">       
+        <div class="container justify-content-center py-5 d-flex">
+            <div class="container-1 col-md-5" >
+                <div class="quote text-center m-5 text-light "><br><br><Br><Br>
+                    <h4>Everything's always ending... But</h4><h4> everything's always beginning,</h4><h4> too...</h4><br>
+                    <h5 >It's time to begin.</h5><br>
+                    <br><br><Br>
+                    <h2> Let's Login</h2>
+
+                </div>
+            </div>
+            
+            <div class="container-2 col-md-6 text-center align-items-center justify-content-center">
+                <br><h3 class="text-center mt-2 heading ">Faculty Admission</h3><br>
+                <form class="m-5 mt-3 px-2" action="FacAdmission" method="post">
+                   <div id="personal">
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                            <input type="text" class="form-control"  name="fname" placeholder="Full Name" id="fname">
+                          <label for="fname" class="label">Full Name</label>
+                          <span id="fnameerr" class="error"></span>
+                        </div>
+                   
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                            <input type="date" class="form-control"  name="date" placeholder="Date Of Birth" id="date">
+                         <label for="date" class="label">Date Of Birth</label>
+                         <span id="dateerr" class="error"></span>
+                        </div>
+                        <br>
+                        <b>Gender:</b> <input type="radio" name="gender" class="ms-5" id="Male" value="Male"><span class="ms-2">Male</span>
+                        <input type="radio" name="gender" class="ms-5" id="Female" value="Female"><span class="ms-2">Female</span>
+                        <input type="radio" name="gender" class="ms-5" id="Others" value="Others" checked><span class="ms-2">Others</span>
+                        <span id="generr" class="error"></span>
+                        
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                            <input type="email" class="form-control"  name="email" placeholder="Email" id="email">
+                          <label for="email" class="label">Email</label>
+                          <span id="emailerr" class="error"></span>
+                        </div><!-- comment --> 
+                  
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                           <input type="password" class="form-control"  name="password" placeholder="Password" id="password">
+                         <label for="password" class="label">Password</label>
+                         <span id="passerr" class="error"></span>
+                        </div><!-- comment -->
+                  
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                           <input type="tel" class="form-control"  name="number" placeholder="Mobile No." id="phno">
+                         <label for="number" class="label">Mobile No.</label>
+                         <span id="pherr" class="error"></span>
+                        </div><!-- comment -->
+                        <button type="button"  class="col-md-3 mt-2 py-2 submit-btn" id="personal-btn">Next</button>  
+                   </div>
+                   
+                   <div id="address">
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                            <input type="text" class="form-control"  name="status" placeholder="Maritual Status" id="status" required>
+                          <label for="status" class="label">Maritual Status</label>
+                        </div>
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                            <input type="text" class="form-control"  name="address" placeholder="Address" id="address1" required>
+                         <label for="address1" class="label">Address</label>
+                        </div>
+                       
+                        <div class="form-floating mb-3 col-md-12 mt-4">
+                            <input type="text" class="form-control"  name="qualification" placeholder="Qualification" id="qualification" required>
+                          <label for="qualification" class="label">Qualification</label>
+                        </div>
+                         <div class="form-floating mb-3 col-md-12 mt-4">
+                             <input type="text" class="form-control"  name="experience" placeholder="Experience" id="experience" required>
+                          <label for="experience" class="label">Experience</label>
+                        </div>
+                       <button type="button"  class="col-md-3 mt-2 py-2 submit-btn" id="back-btn">Back</button> 
+                        <button type="submit"  class="col-md-3 mt-2 py-2 submit-btn" id="submit-btn">Submit</button>
+                   </div>                    
+                </form>
+            </div>
+        </div>
+        </div>
+       
+        
+         <script>
+            var personal=document.getElementById('personal');
+            var btn=document.getElementById('personal-btn');
+             var address=document.getElementById('address');
+             var btn1=document.getElementById('back-btn');
+             
+             address.style.display="none";
+             
+             btn.addEventListener('click',e=>{
+                 if(validatepersonal()){
+                    address.style.display="";   
+                    personal.style.display="none";
+                }
+                
+            }); 
+             btn1.addEventListener('click',e=>{
+                  address.style.display="none";
+                   personal.style.display="";
+             });
+                  var fname=document.getElementById('fname').value="";
+                  var date=document.getElementById('date').value="";
+                  var email=document.getElementById('email').value="";
+                  var pass=document.getElementById('password').value="";
+                  var phno=document.getElementById('phno').value="";
+                  var status=document.getElementById('status').value="";
+                  var address1=document.getElementById('address1').value="";
+                  var qualification=document.getElementById('qualification').value="";
+                  var experience=document.getElementById('experience').value="";
+             function validatepersonal(){
+                  var fname=document.getElementById('fname').value.trim();
+                  var date=document.getElementById('date').value;
+                  var email=document.getElementById('email').value.trim();
+                  var pass=document.getElementById('password').value.trim();
+                  var phno=document.getElementById('phno').value.trim();
+                  
+                  var fnameerr=document.getElementById('fnameerr');
+                  var dateerr=document.getElementById('dateerr');
+                  var emailerr=document.getElementById('emailerr');
+                  var passerr=document.getElementById('passerr');
+                  var pherr=document.getElementById('pherr');
+                  
+                let namechk=/^[a-z A-Z]{3,}$/;
+                let mobilechk=/(^[6-9])([0-9]{9})$/;
+                let emailchk=/(^[a-z 0-9]+)\@([a-z]{3,7})\.([a-z]{3,6})(\.[a-z]{1,6})?$/;
+                let passchk=/(^\w{1,}\W{1,}\d{1,})$/;
+                
+                var isvalid=false;
+                var isname=false;
+                var ismobile=false;
+                var isdob=false;
+                var isemail=false;
+                var ispassword=false;
+                var isgender=false;
+                
+                if(fname==""){
+                    fnameerr.innerHTML="* Please Enter The Name";
+                    document.getElementById('fname').style.border="1px solid red";
+                }
+                else if(!namechk.test(fname)){
+                    fnameerr.innerHTML="* Please Enter Valid Name";
+                    document.getElementById('fname').style.border="1px solid red";
+                }
+                else{
+                    fnameerr.innerHTML="";
+                    document.getElementById('fname').style.border="3px solid green";
+                    isname=true;
+                }
+                
+                
+                if(phno==""){
+                    pherr.innerHTML="* Please Enter The Mobile Number";
+                    document.getElementById('phno').style.border="1px solid red";
+
+                }
+                else if(!mobilechk.test(phno)){
+                    pherr.innerHTML="* Please Enter Valid Mobile Number";
+                    document.getElementById('phno').style.border="1px solid red";
+
+                }
+                else{
+                    pherr.innerHTML="";
+                    ismobile=true;
+                    document.getElementById('phno').style.border="3px solid green";
+
+                }
+                
+                var d=new Date(date);
+                var year=d.getFullYear();
+
+                if(year<2006){
+                    dateerr.innerHTML="";
+                    isdob=true;
+                    document.getElementById('date').style.border="3px solid green";
+
+                }
+                else{
+                    dateerr.innerHTML="Please Enter The Correct Date of Birth";
+                    document.getElementById('date').style.border="1px solid red";     
+                }
+                
+                 if(email==""){
+                    emailerr.innerHTML="* Please Enter The Email";
+                    document.getElementById('email').style.border="1px solid red";
+
+                }
+                else if(!emailchk.test(email)){
+                    emailerr.innerHTML="* Please Enter Valid Email";
+                    document.getElementById('email').style.border="1px solid red";
+
+                }
+                else{
+                    emailerr.innerHTML="";
+                    isemail=true;
+                    document.getElementById('email').style.border="3px solid green";
+
+                }
+                
+                if(pass==""){
+                    passerr.innerText="Please Enter The Password";
+                    document.getElementById('password').style.border="1px solid red";  
+                }
+                else if(!passchk.test(pass)){
+                    passerr.innerText="Please Enter the Strong Password...Password must be followed by any case alphabets ,special character ended with of digits";
+                    document.getElementById('password').style.border="1px solid red";  
+                }
+                else if(pass.length<8){
+                    passerr.innerText="Password length must be atleast 8 characters";
+                    document.getElementById('password').style.border="1px solid red";  
+                }
+                else{
+                    passerr.innerText="";
+                    ispassword=true;
+                    document.getElementById('password').style.border="3px solid green";  
+
+                }
+                
+                
+                if(isname && ismobile && isdob && isemail && ispassword ){
+                    isvalid=true;
+                }
+
+                return isvalid;
+             }
+         </script>
+        
+    </body>
+</html>

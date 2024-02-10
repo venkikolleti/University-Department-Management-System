@@ -1,0 +1,691 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+        <title>UDMS</title>
+        <meta name="desciption" content="Coding collegues">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+.container-big-1 a{
+    color: white;
+}
+body{
+    background-color:#baf4f5;
+}
+.container-1{
+
+    border-radius:20px 0px 0px 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("Images/b4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.container-2{
+
+    border-radius:0px 20px 20px 0px;
+    background:linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.5));
+    box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);
+}
+.form-control{
+    height:-20px;
+    border:0px;
+    background:linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    border-bottom:2px solid black;
+
+}
+
+.container-big-1 .navbar{
+                background:linear-gradient(to right,#079440,#07b34c);
+
+                box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 10px rgba(153, 184, 180, 0.4);
+
+
+}
+.container-1 .quote h5{
+    color:#a5b5b2;
+}
+
+.container-2 .heading{
+    border:2px sold green;
+    width:350px;
+    margin:auto;
+    padding:15px 30px;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);  
+    border-radius:70px 5px 70px 5px;
+}
+.container-2 .submit-btn{
+    border-radius:40px;
+    background:linear-gradient(to right,#52c441,#48bf36,#62eb4d);
+        box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);  
+
+}
+.container-reg{
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 650px;
+}
+
+.error{
+    color:red;
+}
+.container-reg .adm{
+    border:2px sold green;
+    width:400px;
+    margin:auto;
+    padding:15px 30px;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 50px rgba(153, 184, 180, 0.9);  
+    border-radius:15px;    
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container-big-1">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-3" href="#"><img src="" width="40px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-col" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-col">
+                    <ul class="navbar-nav nav-underline ms-auto me-3">
+
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-reg">  
+            <h3 class="text-center mt-5 adm">STUDENT ADMISSION</h3><br>
+
+        <div class="container justify-content-center py-5 d-flex">
+
+            <div class="container-1 col-md-4" >
+                <div class="quote text-center m-5 text-light "><br><br><Br><Br>
+                    <h4>Everything's always ending... But</h4><h4> everything's always beginning,</h4><h4> too...</h4><br>
+                    <h5 >It's time to begin.</h5><br>
+                    <br><br><Br>
+                    <h2> Let's Start</h2>
+
+                </div>
+            </div>
+            
+            <div class="container-2 col-md-6 text-center align-items-center justify-content-center">
+
+                <form class="mx-5" method="post" action="NewAdmission">
+                    
+                <div class="col-md-5 mt-5 mx-auto">
+                    <select class="form-select" name="acedamic-year">
+                        <option>ACADEMIC YEAR</option>
+                        <option value="2020-21">2020-21</option>
+                        <option value="2021-22">2021-22</option>
+                        <option value="2022-23">2022-23</option>
+                        <option value="2023-24">2023-24</option>
+                    </select>
+                </div>                                                             
+                <div id="Personal-info">
+                 <h5 class="text-center mt-5 heading ">PERSONAL DETAILS</h5><br>
+                 <div class="form-floating mb-3 col-md-12 mt-2" >
+                    <input type="text" class="form-control"  name="name" placeholder="Full Name" id="name">
+                    <label for="name" class="label">Full Name</label>
+                    <span id="nameerr" class="error"></span>
+                  </div>
+                  <div class="form-floating mb-3 col-md-12">
+                    <input type="date" class="form-control"  name="dob" placeholder="Date Of Birth" id="dob">
+                    <label for="dob" class="label">Date Of Birth</label>
+                    <span id="doberr" class="error"></span>
+                  </div><!-- comment -->
+                  
+                  
+                  <br>
+                  <b>Gender : </b>
+                         <input type="radio" name="gender" class="ms-5 " id="male" value="male"> <span class="ms-2" >Male</span>
+                         <input type="radio" name="gender" class="ms-5 " id="female" value="female"> <span class="ms-2" >Female</span>
+                         <input type="radio" name="gender" class="ms-5 " id="other" value="other"> <span class="ms-2" >Others</span>
+                         <span class="error" id="gendererr"></span>
+                  <br>                  
+                   <div class="form-floating mb-3 col-md-12 mt-3">
+                        <input type="tel" class="form-control"  name="mobile" placeholder="Mobile Number" id="mobile">
+                        <label for="mobile" class="label">Mobile Number</label>
+                        <span id="mobileerr" class="error"></span>
+                    </div> 
+                    
+                    
+                    <div class="form-floating mb-3 col-md-12 mt-3">
+                    <input type="text" class="form-control"  name="email" placeholder="Email" id="email">
+                    <label for="email" class="label">Personal Gmail</label>
+                    <span id="emailerr" class="error"></span>
+                    </div>
+                    
+                     <div class="form-floating mb-3 col-md-12 mt-3">
+                        <input type="password" class="form-control"  name="password" placeholder="password" id="password">
+                        <label for="password" class="label">Password</label>
+                        <span id="passerr" class="error"></span>
+                    </div>
+                                       
+                                      
+                                       
+                  <button type="button"  class="col-md-3 mt-3 py-2 submit-btn ms-auto" id="Personal-btn">Next</button>
+
+                </div>
+                    
+     
+                        
+                        
+                        
+                        
+                <div id="parental-info">
+                    <h5 class="text-center mt-5 heading ">PARENTAL DETAILS</h5><br>
+                     <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="fname" placeholder="Father Name" id="fname">
+                        <label for="fname" class="label">Father Name</label>
+                        <span id="fnameerr" class="error"></span>
+                     </div><br>
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="mname" placeholder="Mother Name" id="mname">
+                        <label for="mname" class="label">Mother Name</label>
+                        <span id="mnameerr" class="error"></span>
+                    </div><br>
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="tel" class="form-control"  name="parentcontact" placeholder="Parent Mobile" id="parentcontact">
+                        <label for="parentcontact" class="label">Parent Contact</label>
+                        <span id="pcontacterr" class="error"></span>
+                    </div><br>
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="occupation" placeholder="occupation" id="occupation">
+                        <label for="occupation" class="label">Occupation</label>
+                        <span id="occupationerr" class="error"></span>
+                    </div>                 
+
+                  <button type="button"  class="col-md-3 mt-3 py-2 submit-btn ms-auto" id="parental-info-back">Back</button>
+                  <button type="button"  class="col-md-3 mt-3 py-2 submit-btn ms-5" id="parental-info-next">Next</button>
+                </div>
+                   
+                   
+                <div id="address-info">
+                    <h5 class="text-center mt-5 heading ">ADDRESS INFORMATION</h5><br>
+                     <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="village" placeholder="village" id="village">
+                        <label for="village" class="label">Village</label>
+                        <span id="villageerr" class="error"></span>
+                     </div>
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="tel" class="form-control"  name="pincode" placeholder="pincode" id="pincode">
+                        <label for="tel" class="label">Pincode</label>
+                        <span id="pincodeerr" class="error"></span>
+
+                    </div>
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="mandal" placeholder="mandal" id="mandal">
+                        <label for="mandal" class="label">Mandal</label>
+                        <span id="mandalerr" class="error"></span>
+                    </div>
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="district" placeholder="district" id="district">
+                        <label for="district" class="label">District</label>
+                        <span id="districterr" class="error"></span>
+                    </div>                 
+                    <div class="form-floating mb-3 col-md-12 mt-3" >
+                        <input type="text" class="form-control"  name="state" placeholder="state" id="state">
+                        <label for="state" class="label">State</label>
+                        <span id="stateerr" class="error"></span>
+                    </div> 
+                  <button type="button"  class="col-md-3 mt-3 py-2 submit-btn ms-auto" id="address-info-back">Back</button>
+                  <button type="submit"  class="col-md-3 mt-3 py-2 submit-btn ms-5" id="submit-btn">submit</button><br>
+                  <span id="submiterr" class="error"></span>
+                </div>                  
+                 
+                   
+                   
+
+                   
+                   
+                   
+                   
+                </form>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        </div>
+        
+        
+        <script>
+
+            var parental=document.getElementById('parental-info');
+            var personal=document.getElementById('Personal-info');
+            var personalbtn=document.getElementById('Personal-btn');
+            var parentalback=document.getElementById('parental-info-back');
+            var parentalnext=document.getElementById('parental-info-next');
+            var address=document.getElementById('address-info');
+            var addressback=document.getElementById('address-info-back');
+            
+            
+            parental.style.display="none";
+            address.style.display="none";
+
+            personalbtn.addEventListener('click',e=>{
+                if(validatepersonal()){
+                    parental.style.display="";
+                    personal.style.display="none";
+                }
+            });
+            parentalback.addEventListener('click',e=>{
+                
+                    personal.style.display="";
+                    parental.style.display="none";
+                
+                
+            });
+            parentalnext.addEventListener('click',e=>{
+                if(parentalvalidate()){
+                    address.style.display="";   
+                    parental.style.display="none";
+                }
+            });
+            addressback.addEventListener('click',e=>{
+                parental.style.display="";
+                address.style.display="none";
+            });
+            
+            
+            
+            var submit=document.getElementById('submit-btn');
+                submit.addEventListener('click',e=>{
+                    if(!addressvalidate()){
+                        e.preventDefault();
+                    }
+
+            });
+            
+                /*var name=document.getElementById('name').value="";
+                var mobile=document.getElementById('mobile').value="";
+                var dob=document.getElementById('dob').value="";
+                var email=document.getElementById('email').value="";
+                var password=document.getElementById('password').value="";
+                var fname=document.getElementById('fname').value="";
+                var mname=document.getElementById('mname').value="";
+                var mobile=document.getElementById('parentcontact').value="";
+                var occupation=document.getElementById('occupation').value="";                
+                var village=document.getElementById('village').value="";
+                var pincode=document.getElementById('pincode').value="";
+                var mandal=document.getElementById('mandal').value="";
+                var district=document.getElementById('district').value="";
+                var state=document.getElementById('state').value="";*/
+            
+            function validatepersonal(){
+                var name=document.getElementById('name').value.trim();
+                var mobile=document.getElementById('mobile').value.trim();
+                var dob=document.getElementById('dob').value;
+                var email=document.getElementById('email').value.trim();
+                var password=document.getElementById('password').value.trim();
+                var male=document.getElementById('male').value;
+                var female=document.getElementById('female').value;
+                var other=document.getElementById('other').value;
+                
+                
+                let namechk=/^[a-z A-Z]{3,}$/;
+                let mobilechk=/(^[6-9])([0-9]{9})$/;
+                let emailchk=/(^[a-z 0-9]+)\@([a-z]{3,7})\.([a-z]{3,6})(\.[a-z]{1,6})?$/;
+                let passchk=/(^\w{1,}\W{1,}\d{1,})$/;
+                
+                var nameerr=document.getElementById('nameerr');
+                var mobileerr=document.getElementById('mobileerr');
+                var doberr=document.getElementById('doberr');
+                var emailerr=document.getElementById('emailerr');
+                var passerr=document.getElementById('passerr');
+                var gendererr=document.getElementById('gendererr');
+                
+                var isvalid=false;
+                var isname=false;
+                var ismobile=false;
+                var isdob=false;
+                var isemail=false;
+                var ispassword=false;
+                var isgender=false;
+                
+                
+                if(name==""){
+                    nameerr.innerHTML="* Please Enter The Name";
+                    document.getElementById('name').style.border="1px solid red";
+                }
+                else if(!namechk.test(name)){
+                    nameerr.innerHTML="* Please Enter Valid Name";
+                    document.getElementById('name').style.border="1px solid red";
+                }
+                else{
+                    nameerr.innerHTML="";
+                    document.getElementById('name').style.border="3px solid green";
+                    isname=true;
+                }
+                                    
+
+                    
+                if(mobile==""){
+                    mobileerr.innerHTML="* Please Enter The Mobile Number";
+                    document.getElementById('mobile').style.border="1px solid red";
+
+                }
+                else if(!mobilechk.test(mobile)){
+                    mobileerr.innerHTML="* Please Enter Valid Mobile Number";
+                    document.getElementById('mobile').style.border="1px solid red";
+
+                }
+                else{
+                    mobileerr.innerHTML="";
+                    ismobile=true;
+                    document.getElementById('mobile').style.border="3px solid green";
+
+                }
+                
+                
+                if(male=="" && female==""){
+                    gendererr.innerHTML="Select the Gender";
+               
+                }
+
+                else{
+                    isgender=true;
+                }
+                
+                
+                
+                var d=new Date(dob);
+                var year=d.getFullYear();
+
+                if(year<2006){
+                    doberr.innerHTML="";
+                    isdob=true;
+                    document.getElementById('dob').style.border="3px solid green";
+
+                }
+                else{
+                    doberr.innerHTML="Please Enter The Correct Date of Birth";
+                    document.getElementById('dob').style.border="1px solid red";     
+                }
+                
+                
+                if(email==""){
+                    emailerr.innerHTML="* Please Enter The Email";
+                    document.getElementById('email').style.border="1px solid red";
+
+                }
+                else if(!emailchk.test(email)){
+                    emailerr.innerHTML="* Please Enter Valid Email";
+                    document.getElementById('email').style.border="1px solid red";
+
+                }
+                else{
+                    emailerr.innerHTML="";
+                    isemail=true;
+                    document.getElementById('email').style.border="3px solid green";
+
+                }
+                                
+        
+        
+        
+                if(password==""){
+                    passerr.innerText="Please Enter The Password";
+                    document.getElementById('password').style.border="1px solid red";  
+                }
+                else if(!passchk.test(password)){
+                    passerr.innerText="Please Enter the Strong Password...Password must be followed by any case alphabets ,special character ended with of digits";
+                    document.getElementById('password').style.border="1px solid red";  
+                }
+                else if(password.length<8){
+                    passerr.innerText="Password length must be atleast 8 characters";
+                    document.getElementById('password').style.border="1px solid red";  
+                }
+                else{
+                    passerr.innerText="";
+                    ispassword=true;
+                    document.getElementById('password').style.border="3px solid green";  
+
+                }
+
+                
+                if(isname && ismobile && isdob &&  isemail && ispassword && isgender){
+                    isvalid=true;
+                }
+
+                return isvalid;
+                
+            }
+            
+            
+            
+            
+            
+            function parentalvalidate(){
+                let namechk=/^[a-z A-Z]{3,}$/;
+                let mobilechk=/(^[6-9])([0-9]{9})$/;
+                
+                var fname=document.getElementById('fname').value.trim();
+                var mname=document.getElementById('mname').value.trim();
+                var mobile=document.getElementById('parentcontact').value.trim();
+                var occupation=document.getElementById('occupation').value.trim();
+                
+                var fnameerr=document.getElementById('fnameerr');
+                var mnameerr=document.getElementById('mnameerr');
+                var pcontacterr=document.getElementById('pcontacterr');
+                var occupationerr=document.getElementById('occupationerr');
+                
+                var isvalid=false;
+                var isfname=false;
+                var ismname=false;
+                var ismobile=false;
+                var isoccupation=false;
+               
+                
+                if(fname==""){
+                    fnameerr.innerHTML="* Please Enter The Father Name";
+                    document.getElementById('fname').style.border="1px solid red";
+                }
+                else if(!namechk.test(fname)){
+                    fnameerr.innerHTML="* Please Enter Correct Name";
+                    document.getElementById('fname').style.border="1px solid red";
+                }
+                else{
+                    fnameerr.innerHTML="";
+                    document.getElementById('fname').style.border="3px solid green";
+                    isfname=true;
+                }
+                
+                
+                if(mname==""){
+                    mnameerr.innerHTML="* Please Enter The Mother Name";
+                    document.getElementById('mname').style.border="1px solid red";
+                }
+                else if(!namechk.test(mname)){
+                    mnameerr.innerHTML="* Please Enter Correct Name";
+                    document.getElementById('mname').style.border="1px solid red";
+                }
+                else{
+                    mnameerr.innerHTML="";
+                    document.getElementById('mname').style.border="3px solid green";
+                    ismname=true;
+                } 
+                
+                
+                
+                if(mobile==""){
+                    pcontacterr.innerHTML="* Please Enter The Mobile Number";
+                    document.getElementById('parentcontact').style.border="1px solid red";
+
+                }
+                else if(!mobilechk.test(mobile)){
+                    pcontacterr.innerHTML="* Please Enter Valid Mobile Number";
+                    document.getElementById('parentcontact').style.border="1px solid red";
+
+                }
+                else{
+                    pcontacterr.innerHTML="";
+                    ismobile=true;
+                    document.getElementById('parentcontact').style.border="3px solid green";
+
+                }
+                
+                
+                   
+                
+                if(occupation==""){
+                    occupationerr.innerHTML="* Please Enter The Father Occupation";
+                    document.getElementById('occupation').style.border="1px solid red";
+                }
+                else if(!namechk.test(occupation)){
+                    occupationerr.innerHTML="* Please Enter Correct occupation";
+                    document.getElementById('occupation').style.border="1px solid red";
+                }
+                else{
+                    occupationerr.innerHTML="";
+                    document.getElementById('occupation').style.border="3px solid green";
+                    isoccupation=true;
+                }
+                
+               if(isfname && ismname && ismobile && isoccupation ){
+                   isvalid=true;
+               } 
+               return isvalid;
+                
+                
+            }
+            
+            
+            
+            
+            function addressvalidate(){
+                let namechk=/^[a-z A-Z]{3,}$/;
+                let mobilechk=/^[0-9]{6}$/;
+                
+                var village=document.getElementById('village').value.trim();
+                var pincode=document.getElementById('pincode').value.trim();
+                var mandal=document.getElementById('mandal').value.trim();
+                var district=document.getElementById('district').value.trim();
+                var state=document.getElementById('state').value.trim();
+                
+                var villageerr=document.getElementById('villageerr');
+                var pincodeerr=document.getElementById('pincodeerr');
+                var mandalerr=document.getElementById('mandalerr');
+                var districterr=document.getElementById('districterr');
+                var stateerr=document.getElementById('stateerr');
+                
+                var isvalid=false;
+                var isvillage=false;
+                var ispincode=false;
+                var ismandal=false;
+                var isdistrict=false;
+                var isstate=false;
+                
+                
+                if(village==""){
+                    villageerr.innerHTML="* Please Enter The Village Name";
+                    document.getElementById('village').style.border="1px solid red";
+                }
+                else if(!namechk.test(village)){
+                    villageerr.innerHTML="* Please Enter Correct village Name";
+                    document.getElementById('village').style.border="1px solid red";
+                }
+                else{
+                    villageerr.innerHTML="";
+                    document.getElementById('village').style.border="3px solid green";
+                    isvillage=true;
+                }
+                
+
+                if(pincode==""){
+                    pincodeerr.innerHTML="* Please Enter The Pincode";
+                    document.getElementById('pincode').style.border="1px solid red";
+
+                }
+                else if(!mobilechk.test(pincode)){
+                    pincodeerr.innerHTML="* Please Enter Correct Pincode";
+                    document.getElementById('pincode').style.border="1px solid red";
+
+                }
+                else{
+                    pincodeerr.innerHTML="";
+                    ispincode=true;
+                    document.getElementById('pincode').style.border="3px solid green";
+
+                }
+                
+                
+                if(mandal==""){
+                    mandalerr.innerHTML="* Please Enter The Mandal Name";
+                    document.getElementById('mandal').style.border="1px solid red";
+                }
+                else if(!namechk.test(mandal)){
+                    mandalerr.innerHTML="* Please Enter Correct Mandal Name";
+                    document.getElementById('mandal').style.border="1px solid red";
+                }
+                else{
+                    mandalerr.innerHTML="";
+                    document.getElementById('mandal').style.border="3px solid green";
+                    ismandal=true;
+                }
+                  
+        
+                if(district==""){
+                    districterr.innerHTML="* Please Enter The District Name";
+                    document.getElementById('district').style.border="1px solid red";
+                }
+                else if(!namechk.test(district)){
+                    districterr.innerHTML="* Please Enter Correct District Name";
+                    document.getElementById('district').style.border="1px solid red";
+                }
+                else{
+                    districterr.innerHTML="";
+                    document.getElementById('district').style.border="3px solid green";
+                    isdistrict=true;
+                }
+                  
+        
+                if(state==""){
+                    stateerr.innerHTML="* Please Enter The State Name";
+                    document.getElementById('state').style.border="1px solid red";
+                }
+                else if(!namechk.test(state)){
+                    stateerr.innerHTML="* Please Enter Correct State Name";
+                    document.getElementById('state').style.border="1px solid red";
+                }
+                else{
+                    stateerr.innerHTML="";
+                    document.getElementById('state').style.border="3px solid green";
+                    isstate=true;
+                }
+                         
+                
+                
+                               
+                
+                if(isvillage && ispincode && ismandal && isdistrict && isstate){
+                    isvalid=true;
+                }
+                
+                return isvalid;
+                               
+            }
+
+
+        </script>
+
+    </body>
+</html>
